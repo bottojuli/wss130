@@ -1,0 +1,71 @@
+img {
+    width: 30%;
+} 
+p {
+    width: 80%;
+} 
+a {
+    font-size: 1.5em;
+}  
+/* The following is to see the borderlines and watch the inline and block separations for each element 
+
+* { 
+    border: 2px solid blue;
+}   
+
+*/ 
+
+/* Let's center some elements individually now. We can center our h1 using text-align (and this applies to  
+every other block element): center and it will center within it's container because there is space left over  
+after the text and before the end of the element.*/ 
+h1 {
+    text-align: center;
+}  
+nav, footer {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+} 
+/* If we try to center the img element the same way, with text-align: center, it won't work because there is  
+no extra space inside it's container. Text-align center will center the content of its container. */ 
+/* With images we want to center the container itself, and this is done with margin: 0 auto. */ 
+img {
+    width: 80%; /* Just to be sure the centering done in margin will be noticeable */
+    display: block; /* img is an inline level element, so we have to block it */
+    margin: 0 auto; /* 0 refers to top and bottom margin */
+} 
+
+/* Let's center the paragraph container, that is inside main, in the same way. Give it a width of 80% and give  
+it a margin: 0 auto. */ 
+/* We didn't have to put display: block because p elements are already block-level elements. */
+
+main p {
+    width: 80%; 
+    /* If I wanted to add some more margin to the top and bottom of my paragraph I can increase the zero and add a pixel size.
+    margin: 50px auto; */
+    margin: 0 auto; 
+    text-align: center;
+} 
+/* We have two paragraphs in our HTML. But we want to target ONLY the paragraph that is inside the footer,  
+not the paragraph in main. We want to make it a different font-size. If we target the p element, both paragraphs  
+will change. We could give one of them a class or ID as well and target that, but let's use a descendant  
+selector instead. */
+footer p {
+    font-size: 20px;
+    margin: 20px auto; 
+     
+    /* So the descendant selector is only targeting the p that is inside footer. It could be a child p,  
+    a grandchild p, and so on as long as it's inside footer.*/
+}  
+/* In this example, we will be adding a selector for a pseudo-class.
+
+Pseudo-classes require some interaction by the user in order for the style to be applied.  
+For example, with the :hover pseudo-class the styles will only be applied if the user is hovering their mouse  
+pointer over the element.
+
+Let's change the background and font color of our menu links when the user hovers over them.  
+This will be a new rule, not an addition to any existing a rule.*/
+a:hover {
+    background-color: white;
+    color: steelblue;
+}

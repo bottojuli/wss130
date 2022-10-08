@@ -1,0 +1,69 @@
+body { 
+    background-color: rgb(237, 170, 216);
+}
+   
+
+/* Let's center some elements individually now. We can center our h1 using text-align (and this applies to  
+every other block element): center and it will center within it's container because there is space left over  
+after the text and before the end of the element.*/ 
+header h1 {
+    text-align: center; 
+    font-size: 40px;
+    color: white;
+}    
+header h1:hover {
+    color: black;
+} 
+
+header h4 { 
+    text-align: center; 
+    color: white;
+}   
+  
+main h4 { 
+    width: 20%; 
+    margin: 0 auto; /* 0 refers to top and bottom margin */ 
+
+} 
+/* If we try to center the img element the same way, with text-align: center, it won't work because there is  
+no extra space inside it's container. Text-align center will center the content of its container. */ 
+/* With images we want to center the container itself, and this is done with margin: 0 auto. */ 
+img {
+    width: 10%; /* Just to be sure the centering done in margin will be noticeable */
+    display: block; /* img is an inline level element, so we have to block it */
+    margin: 0 auto; /* 0 refers to top and bottom margin */
+} 
+
+/* Let's center the paragraph container, that is inside main, in the same way. Give it a width of 80% and give  
+it a margin: 0 auto. */ 
+/* We didn't have to put display: block because p elements are already block-level elements. */
+
+p {
+    width: 80%; 
+    /* If I wanted to add some more margin to the top and bottom of my paragraph I can increase the zero and add a pixel size.
+    margin: 50px auto; */
+    margin: 0 auto; 
+    text-align: center;
+}  
+main p {
+    width: 30%; 
+    /* If I wanted to add some more margin to the top and bottom of my paragraph I can increase the zero and add a pixel size.
+    margin: 50px auto; */
+    margin: 0 auto;  
+    font-size: 40px; 
+    color: white;
+    text-align: center;
+} 
+header p {
+    width: 30%; 
+    margin: 0 auto;  
+    color: white;
+    text-align: center;
+}
+
+footer { 
+    font-size: 10px;
+    color: black;
+    padding: 10px; 
+    text-align: center;
+}
