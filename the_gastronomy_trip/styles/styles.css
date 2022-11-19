@@ -1,0 +1,178 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+
+
+:root {
+  /* Colors Pallete */
+  --primary-color: #2E271A   ;
+  --secondary-color: #303D1E ;
+  --accent1-color: #e4591d;;
+  --accent2-color: #290505;
+
+  /* Chosen Fonts */
+  --heading-font: "League Script";
+  --paragraph-font: "League Script", 'Times New Roman', Times, serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #303D1E;  /* headlines on a white background */ 
+  --headline-color-on-color: #f9f9f9; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #290505; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #f9f9f9; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #e4591d;  ;
+  --nav-link-color: #f9f9f9;
+  --nav-background-color: #2E271A ;
+  --nav-hover-link-color: #f9f9f9;
+  --nav-hover-background-color: #3f3726;
+}
+
+body {  
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #303D1E; 
+    margin: 0 auto; 
+} 
+main { 
+    background-color: #290505;  
+    padding: 5%;
+}       
+
+.logo { 
+    width: 15%; 
+    padding-top: 1%;  
+    padding-left: 1%; 
+    margin: auto; 
+    transition: transform .5s; 
+} 
+.logo:hover { 
+  opacity: .6;  
+  transform: scale(1.1);
+}
+ 
+/* NAVIGATION SECTION*/
+nav { 
+    background-color: #303D1E;  
+    line-height: 0;
+    margin: auto;
+    font-size: 1.2em; 
+    list-style-type: none;
+    display: flex;  
+    justify-content: space-around; 
+    padding-bottom: 5%; 
+    width: 50%;
+  }
+  nav a {
+    padding:0.5em;
+    min-width: 120px; 
+    color: #f9f9f9;  
+    text-decoration: none;
+    padding: 10px; 
+    text-align: center;
+  }
+  nav a:hover {
+    color: rgb(163, 167, 159);  
+    background-color: #303D1E;    
+  }  
+ 
+
+/* #content { 
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}  */
+header { 
+    /* grid-row: 1/2;  */
+    padding: 0;
+} 
+a { 
+  font-size: 180%;   
+  padding: 0;
+} 
+.banner {   
+  display: block; 
+  margin-top: 5%;
+  margin:0 auto;   
+  box-shadow: 5px 5px 10px #190303;
+} 
+h4 { 
+  margin: 0 auto; 
+  color: #190303; 
+  font-size: 120%; 
+  padding-bottom: 5%;
+}  
+b { 
+  font-size: 300%;  
+  padding-bottom: 5%;
+  color: #190303; 
+  display: block;
+}
+section { 
+  background-color: #e4591d;   
+  padding: 5%;
+  width: 50%; 
+  margin: 0 auto; 
+  margin-top: 5%; 
+  margin-bottom: 5%; 
+  border: 5px solid #1e0b03; 
+  box-shadow: 5px 5px 10px #190303;
+} 
+h1 {   
+  font-size: 600%; 
+  z-index: 1;
+  text-align: center;
+  padding: 0;
+  font-family: "League Script"; 
+  color: #190303;
+} 
+
+footer p { 
+  font-size: 0.8em;  
+}
+footer {    
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    margin: 0;
+    padding: 25px 50px;  
+    background-color: #303D1E;  
+}  
+footer a:hover { 
+  color: rgb(163, 167, 159);   
+}
+footer a { 
+  text-decoration: none;   
+  color: #f9f9f9   
+} 
+footer p, a:hover { 
+  color: #f9f9f9   
+}   
+.subtitle { 
+  font-size: 200%;
+}
+#countries-grid { 
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+} 
+.countries-block {  
+  box-sizing: border-box;
+  grid-column: 1/2;   
+} 
+.countries-block a { 
+  display: block;  
+  text-decoration: none;   
+  color: #190303;
+} 
+.countries-block a:hover { 
+  color: #3a1c1c;   
+} 
+.country-img {  
+  grid-column: 2/3; 
+  margin-bottom: 5%;   
+  margin-left: auto;  
+  width: 90%; 
+  padding-bottom: 50%;
+}    
+
+.countries-block a { 
+  padding-bottom: 5%;
+}
