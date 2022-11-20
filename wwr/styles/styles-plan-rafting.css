@@ -28,6 +28,7 @@ Fonts are separated by a & */
   --nav-hover-background-color: #2d73b6;
 }
 
+
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body { 
@@ -217,11 +218,11 @@ nav a:hover {
   border-radius: 5px;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 2em; 
-  color: #362626   
+  color: #931919   
 } 
 
 h4 { 
-  color: #362626
+  color: #931919
 }          
 
 .join {         
@@ -437,86 +438,7 @@ main .mountains {
   margin: 200px 0; 
   grid-column: 8/10; 
   grid-row: 2/3;
-}    
-
-
-
-
-#comments {  
-  padding-bottom: 5%;
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 5%;   
-}    
-
-b {   
-  font-size: 150%; 
-  color: #051648;  
-  padding: 5%;
-  text-align: left; 
-  grid-column: 1/4; 
-}   
-
-.first-user, .second-user, .third-user, .fourth-user, .fifth-user, .sixth-user { 
-  grid-column: 2/4;   
-  border-radius: 5px; 
-  /* This makes the box to addapt to the content inside */
-  margin: auto;  
-  padding: auto; 
-  border: 1px solid rgb(195, 210, 220);  
-  background-color: rgb(195, 210, 220);
-  margin-left: 0;    
-}    
-.user-img {
-  grid-column: 1/2; 
-  transition: transform .5s; 
 }  
-.user-img:hover { 
-  opacity: .6;  
-  transform: scale(1.1);
-}  
-.h4 { 
-  color: #2d4963; 
-  font-size: 60%;  
-  text-align: left;
-  grid-column: 2/5;    
-  padding: 2%;  
-}   
-.h1 { 
-  color: #2d73b6; 
-  font-size: 80%; 
-  padding-left: 2%; 
-  margin: 0 auto;  
-  text-align: left;
-  grid-column: 2/5;  
-} 
-
-
-
-/* THIS IS THE ONLY THING I CAN TOUCH. THE REST WORKS PERFECTLY! */
-
-#second-grid {  
-  padding-top: 0;
-  display:grid; 
-  grid-template-columns: 1fr; 
-} 
-.banner-img {    
-  background: url(banner-img.jpg); 
-  animation: slide 20s infinite ;
-  width: 30%;   
-  margin-top: 20%; 
-  grid-column: 1/2;    
-  border: 10px solid #051648; 
-  transition: transform .5s; 
-  box-shadow: 5px 5px 10px #100c0c 
-}  
-.banner-img:hover { 
-  opacity: .6;  
-  transform: scale(1.1);
-} 
-
-
-
         
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
@@ -557,6 +479,5 @@ b {
   }
   footer {
       margin-top: 25px;
-  } 
-} 
- 
+  }
+}

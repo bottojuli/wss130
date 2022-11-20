@@ -1,0 +1,56 @@
+#content {   
+    display: grid; 
+    grid-template-columns: 1fr 1fr;  
+    background-color: white; 
+    /* z-index: 1;  */
+    max-width: 1600px;   
+    margin: 0 auto;
+} 
+.cherries-img { 
+    grid-column: 1/2; 
+    text-align: center; 
+    grid-row-start: 1
+}    
+.cherries-title { 
+    text-align: center; 
+    grid-column: 1/3; 
+    grid-row-start: 1;   
+    /* *This allows the text to overlap on the whole screen */
+    z-index: 1;
+}  
+
+.path-title { 
+    grid-column: 2/3; 
+    /* z-index: 1;  */
+} 
+/* aside .cherries-msg { 
+    background-color: gray;
+} */
+.cherries-msg { 
+    width: 100%;  
+    height: 100%;    
+    background-color: #B9B8B9;  
+    grid-column: 2/3; 
+    grid-row-start: 1;   
+    /* z-index: 1; */ 
+} 
+h4 { 
+    text-align: center; 
+    color: red; 
+    font-size: 70px;   
+    padding-top: 60%;
+    font-family: Georgia, Times, 'Times New Roman', serif;  
+}   
+body {  
+    margin: 0 auto; 
+    border: 0;  
+    /* This fixes the bottom margin */ 
+    size: 100%; 
+} 
+h1 {  
+    font-size: 150px; 
+    text-align: center; 
+    grid-column: 1/3;
+} 
+
+

@@ -1,0 +1,104 @@
+body { 
+    background-color: rgb(24, 24, 24); 
+    /* margin: 0 auto; 
+    padding: 0;  */
+} 
+div { 
+    width: 33%; 
+    background-color: white; 
+    overflow: visible; 
+    border-radius: 10px;  
+    /* This causes the white box to get located in the middle of the screen. */
+    margin: 0 auto;  
+    /* By using %, I avoid empty spaces to take place after the footer. */
+    height: 100%; 
+}  
+
+img { 
+    width: 100%; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}  
+b { 
+    font-size: 300%;
+}
+p { 
+    text-align: center; 
+} 
+sup { 
+    font-size: 100%;
+} 
+small { 
+    color: rgb(9, 77, 133); 
+    font-size: 100%;
+}  
+.read {   
+    color: rgba(255, 255, 255, 0.621);    
+    padding-top: 10%; 
+    padding-bottom: 10%; 
+    width: 100%;  
+    gap: 10px solid gray;  
+    display: inline;  
+    text-align: center; 
+    background-color: rgb(54, 86, 150);  
+    border-bottom-left-radius: 10px; 
+} 
+.views {  
+    color: rgba(255, 255, 255, 0.621);    
+    padding-top: 10%;  
+    padding-bottom: 10%; 
+    width: 100%;  
+    gap: 10px solid gray;   
+    display: inline;
+    text-align: center; 
+    background-color: rgb(54, 86, 150);;
+} 
+.comments {   
+    color: rgba(255, 255, 255, 0.621);   
+    padding-top: 10%;    
+    padding-bottom: 10%; 
+    width: 100%;   
+    gap: 10px solid gray;  
+    display: inline;
+    text-align: center; 
+    background-color: rgb(54, 86, 150);  
+    border-bottom-right-radius: 10px;
+}
+.text {  
+    font-size: 150%;  
+    color: gray; 
+    text-align: center; 
+    padding-left: 10%; 
+    padding-right: 10%;
+} 
+h4 { 
+    color: rgba(255, 255, 255, 0.84);   
+    text-align: center;  
+    justify-content: center;
+    padding: 0;  
+    font-size: 50%;
+    margin: 0 auto;
+}  
+h1 { 
+    color: rgba(255, 255, 255, 0.84);   
+    text-align: center;  
+    justify-content: center;
+    font-size: 100%;; 
+    padding: 0; 
+    margin: 0 auto;
+}
+sub { 
+    font-size: 200%; 
+    padding: 0;
+} 
+footer {  
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;  
+    background-color: gray;
+    justify-content: center;  
+    margin: 10 auto;  
+    text-align: center;      
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    gap: 1px;  
+} 

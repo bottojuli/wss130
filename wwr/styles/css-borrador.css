@@ -28,6 +28,7 @@ Fonts are separated by a & */
   --nav-hover-background-color: #2d73b6;
 }
 
+
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body { 
@@ -500,15 +501,13 @@ b {
   display:grid; 
   grid-template-columns: 1fr; 
 } 
-.banner-img {    
-  background: url(banner-img.jpg); 
-  animation: slide 20s infinite ;
+.banner-img {   
   width: 30%;   
   margin-top: 20%; 
   grid-column: 1/2;    
   border: 10px solid #051648; 
   transition: transform .5s; 
-  box-shadow: 5px 5px 10px #100c0c 
+  box-shadow: 5px 5px 10px #100c0c
 }  
 .banner-img:hover { 
   opacity: .6;  
@@ -557,6 +556,5 @@ b {
   }
   footer {
       margin-top: 25px;
-  } 
-} 
- 
+  }
+}
